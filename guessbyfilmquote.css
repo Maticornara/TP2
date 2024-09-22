@@ -1,0 +1,33 @@
+body {
+    background-color: #3E3E3E;
+    }
+
+.titulonivel {
+margin-left: 400px;
+margin-top: 90px;
+opacity: 0; /* Oculto al inicio */
+animation: fadeIn 0.5s ease forwards; /* Animación para hacer fade in */
+animation-delay: 0.5s; /* Empieza después de 0.5 segundos */
+}
+
+.boton {
+    margin-top: 200px;
+    margin-left: 424px;
+    opacity: 0; /* Oculto al inicio */
+    animation: fadeIn 1s ease forwards; /* Animación para hacer fade in */
+    animation-delay: 1.5s; /* Empieza 2.5 segundos después de cargar la página */
+}
+
+.boton:hover img {
+    transform: scale(1.1); /* Aumenta el tamaño del botón en un 10% */
+    opacity: 0.8; /* Hace que el botón sea ligeramente transparente */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

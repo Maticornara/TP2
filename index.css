@@ -1,0 +1,31 @@
+h1 {
+  font-family: 'Noka', sans-serif;
+  font-weight: bolder;
+  font-size: 150px;
+  color: #FF45A2;
+  margin-top: 100px;
+}
+
+body {
+  background-color: #3E3E3E;
+}
+
+.logo {
+  padding-left: 35%;
+  padding-top: 10%;
+  transition: transform 0.5s ease; /* Añadimos la transición para la animación */
+}
+
+.boton {
+  padding-top: 6%;
+  padding-left: 48%;
+} 
+
+.boton:hover img {
+  transform: scale(1.1); /* Aumenta el tamaño del botón en un 10% */
+  opacity: 0.8; /* Hace que el botón sea ligeramente transparente */
+}
+
+.move-left {
+  transform: translateX(-30vw); /* Mueve el logo un 20% hacia la izquierda */
+}

@@ -1,0 +1,61 @@
+body {
+    background-color: #3E3E3E;
+    }
+
+    .logo {
+  
+        padding-left: 5%;
+        padding-top: 10%;
+        }
+
+/* Estilos originales de h1 */
+h1 {
+    font-family: 'Noka', sans-serif;
+    font-weight: 600;
+    font-size: 30pt;
+    color: #FF45A2;
+    margin-top: -19%;
+    margin-left: 55%;
+    opacity: 0; /* Oculto al inicio */
+    animation: fadeIn 0.5s ease forwards; /* Animación para hacer fade in */
+    animation-delay: 0.5s; /* Empieza después de 0.5 segundos */
+}
+
+/* Estilos originales de h2 */
+h2 {
+    font-family: 'Noka', sans-serif;
+    font-weight: 300;
+    font-size: 20pt;
+    color: #ffffff;
+    margin-top: -1%;
+    margin-left: 55%;
+    margin-right: 250px;
+    opacity: 0; /* Oculto al inicio */
+    animation: fadeIn 1s ease forwards; /* Animación para hacer fade in */
+    animation-delay: 1s; /* Empieza después de 0.5 segundos */
+}
+
+.boton {
+    margin-top: 147px;
+    margin-left: 1210px;
+    opacity: 0; /* Oculto al inicio */
+    animation: fadeIn 1s ease forwards; /* Animación para hacer fade in */
+    animation-delay: 2.5s; /* Empieza 2.5 segundos después de cargar la página */
+}
+
+.boton:hover img {
+    transform: scale(1.1); /* Aumenta el tamaño del botón en un 10% */
+    opacity: 0.8; /* Hace que el botón sea ligeramente transparente */
+}
+
+/* Definición de la animación fadeIn */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
