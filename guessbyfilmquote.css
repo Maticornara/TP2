@@ -1,33 +1,34 @@
+/* Estilo general del fondo */
 body {
-    background-color: #3E3E3E;
-    }
-
-.titulonivel {
-margin-left: 400px;
-margin-top: 90px;
-opacity: 0; /* Oculto al inicio */
-animation: fadeIn 0.5s ease forwards; /* Animación para hacer fade in */
-animation-delay: 0.5s; /* Empieza después de 0.5 segundos */
+  background: linear-gradient(to bottom, #3E3E3E, #1A1A1A);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden; /* Evita el scroll */
 }
 
-.boton {
-    margin-top: 200px;
-    margin-left: 424px;
-    opacity: 0; /* Oculto al inicio */
-    animation: fadeIn 1s ease forwards; /* Animación para hacer fade in */
-    animation-delay: 1.5s; /* Empieza 2.5 segundos después de cargar la página */
+.titulo.nivel {
+ margin-top: -2%;
+  margin-bottom: 12%; /* Espacio debajo de la imagen del título */
 }
 
-.boton:hover img {
-    transform: scale(1.1); /* Aumenta el tamaño del botón en un 10% */
-    opacity: 0.8; /* Hace que el botón sea ligeramente transparente */
+.boton.round1 {
+  cursor: pointer;
+  background: none;
+  border: none;
+  width: auto;
+  scale: 90%;
+  display: inline-block; /* Necesario para aplicar transform */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Suaviza la transición */
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+.boton.round1:hover {
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Suaviza la transición */
+  transform: scale(0.9); /* Reduce el tamaño al 90% */
+  opacity: 0.8; /* Cambia la opacidad al 80% */
 }
+
+

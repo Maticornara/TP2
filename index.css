@@ -7,25 +7,33 @@ h1 {
 }
 
 body {
-  background-color: #3E3E3E;
+  background: linear-gradient(to bottom, #3E3E3E, #1A1A1A);
+  height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+  margin: 0; /* Elimina márgenes por defecto */
+  overflow: hidden; /* Evita el scroll */
 }
 
+
+
+
 .logo {
-  padding-left: 35%;
-  padding-top: 10%;
+  margin-left: 33%;
+  margin-top: 6%;
   transition: transform 0.5s ease; /* Añadimos la transición para la animación */
 }
 
 .boton {
-  padding-top: 6%;
-  padding-left: 48%;
+  margin-top: 6%;
+  margin-left: 48%;
+
 } 
 
 .boton:hover img {
-  transform: scale(1.1); /* Aumenta el tamaño del botón en un 10% */
-  opacity: 0.8; /* Hace que el botón sea ligeramente transparente */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Suaviza la transición */
+  transform: scale(0.9); /* Reduce el tamaño al 90% */
+  opacity: 0.8; /* Cambia la opacidad al 80% */
 }
 
 .move-left {
-  transform: translateX(-30vw); /* Mueve el logo un 20% hacia la izquierda */
+  transform: translateX(-29vw); /* Mueve el logo un 20% hacia la izquierda */
 }

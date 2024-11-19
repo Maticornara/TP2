@@ -1,0 +1,59 @@
+body {
+  background: linear-gradient(to bottom, #3E3E3E, #1A1A1A);
+  height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+  margin: 0; /* Elimina márgenes por defecto */
+  overflow: hidden; /* Evita el scroll */
+}
+
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 20vh;
+      width: 100%;
+      background-color: #ffffff; /* Fondo blanco */
+      margin-top: 5%;
+  }
+  
+  /* Estilos para el h2 */
+  .container h2 {
+      font-family: 'Noka', sans-serif;
+      font-weight: 600;
+      font-size: 20pt;
+      color: #3E3E3E;
+      margin: 0; /* Elimina cualquier margen por defecto */
+      text-align: center; /* Alinea el texto al centro */
+  }
+  
+
+      .button-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5%; /* Ajusta el valor para aumentar o disminuir el espacio */
+        margin-top: 20%;
+      }
+      
+      .button-container img {
+        cursor: pointer;
+        width: auto;
+        scale: 80%;
+      }
+      
+      /* Estilo de hover para el botón "Notting Hill" */
+      .boton.hit:hover {
+        transition: transform 0.3s ease, opacity 0.3s ease; /* Suaviza la transición */
+        transform: scale(0.9); /* Reduce el tamaño al 90% */
+        opacity: 0.8; /* Cambia la opacidad al 80% */
+      }
+      
+      /* Estilo de hover para el botón "Before Sunrise" */
+      .boton.flop:hover {
+        transition: transform 0.3s ease, opacity 0.3s ease; /* Suaviza la transición */
+        transform: scale(0.9); /* Reduce el tamaño al 90% */
+        opacity: 0.8; /* Cambia la opacidad al 80% */
+      }
+      
+
+  

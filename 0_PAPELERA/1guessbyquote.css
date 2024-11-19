@@ -1,0 +1,50 @@
+body {
+    background-color: #3E3E3E;
+    }
+
+    .title-container {
+        display: flex;
+        flex-direction: column; /* Apila los elementos en columnas */
+        justify-content: center; /* Centra los elementos verticalmente */
+        align-items: center; /* Centra los elementos horizontalmente */
+        gap: 8px; /* Espacio entre las filas */
+        margin-top: 3%;
+      }
+      
+      .first-row {
+        display: flex;
+        gap: 8px; /* Espacio entre h1 y h2 */
+      }
+      
+      
+      h1 {
+        font-family: noka, sans-serif;
+        font-size: 140pt;
+        font-weight: 600;
+        color: #0CB7F2;  
+        
+      }
+      
+      h2 {
+        font-family: noka, sans-serif;
+        font-size: 70pt;
+        font-weight: 300;
+        color: #F5F5F5;
+        margin-top: 15%;
+        
+      } 
+      
+      h3 {
+        font-family: noka, sans-serif;
+        font-size: 140pt;
+        font-weight: 600;
+        color: #FF45A2;  
+        margin-top: -10%;
+        
+        
+      }
+      
+      .boton {
+      
+      scale: 120%;
+      }
