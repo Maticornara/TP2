@@ -1,3 +1,21 @@
+
+.marker {
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%) scale(0.7); /* Aplica la escala después de centrar */
+  transform-origin: center; /* Establece el origen de la transformación en el centro */
+  margin-top: 2%;
+}
+
+
+.marker img {
+  max-width: 100%; /* Ajusta el tamaño de la imagen si es necesario */
+  height: auto; /* Mantiene las proporciones */
+}
+
+
+
 body {
   background: linear-gradient(to bottom, #3E3E3E, #1A1A1A);
   height: 100vh; /* Ocupa el 100% de la altura de la ventana */
@@ -5,34 +23,66 @@ body {
   overflow: hidden; /* Evita el scroll */
 }
 
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  width: 100%;
+  background-color: #ffffff; /* Fondo blanco */
+  margin-top: 8%;
+  position: relative; /* Permite posicionar elementos absolutos dentro del container */
+}
 
-    .container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 20vh;
-      width: 100%;
-      background-color: #ffffff; /* Fondo blanco */
-      margin-top: 5%;
-  }
-  
-  /* Estilos para el h2 */
-  .container h2 {
-      font-family: 'Noka', sans-serif;
-      font-weight: 600;
-      font-size: 20pt;
-      color: #3E3E3E;
-      margin: 0; /* Elimina cualquier margen por defecto */
-      text-align: center; /* Alinea el texto al centro */
-  }
-  
+/* Tipografía (se mantiene igual) */
+.container h2 {
+  font-family: 'Noka', sans-serif;
+  font-weight: 600;
+  font-size: 20pt;
+  color: #3E3E3E;
+  margin: 0; /* Elimina cualquier margen por defecto */
+  text-align: center; /* Alinea el texto al centro */
+}
 
+
+/* Gradiente inicial */
+.animated-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50vh; /* Mismo alto que el container */
+  width: 5vh; /* Ancho inicial */
+  background: linear-gradient(to bottom, #FF45A2 0%, #BB56DE 50%, #0CB7F2 100%);
+  z-index: 10; /* Envía al fondo */
+  transition: all 3s ease-in-out; /* Transición suave */
+  margin-top: 8%;
+}
+
+
+
+/* Cambios para HIT */
+.animated-gradient.hit {
+  width: 100vw; /* Ancho completo */
+  background: #FF45A2; /* Cambia a color sólido */
+}
+
+/* Cambios para FLOP */
+.animated-gradient.flop {
+  width: 100vw; /* Ancho completo */
+  background: #0CB7F2; /* Cambia a color sólido */
+}
+
+
+
+
+  
+  
       .button-container {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 2.5%; /* Ajusta el valor para aumentar o disminuir el espacio */
-        margin-top: 20%;
+        margin-top: 5%;
       }
       
       .button-container img {
@@ -45,14 +95,14 @@ body {
       .boton.hit:hover {
         transition: transform 0.3s ease, opacity 0.3s ease; /* Suaviza la transición */
         transform: scale(0.9); /* Reduce el tamaño al 90% */
-        opacity: 0.8; /* Cambia la opacidad al 80% */
+        opacity: 1; /* Cambia la opacidad al 80% */
       }
       
       /* Estilo de hover para el botón "Before Sunrise" */
       .boton.flop:hover {
         transition: transform 0.3s ease, opacity 0.3s ease; /* Suaviza la transición */
         transform: scale(0.9); /* Reduce el tamaño al 90% */
-        opacity: 0.8; /* Cambia la opacidad al 80% */
+        opacity: 1; /* Cambia la opacidad al 80% */
       }
       
 

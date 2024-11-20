@@ -1,20 +1,38 @@
+.marker {
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%) scale(0.7); /* Aplica la escala después de centrar */
+  transform-origin: center; /* Establece el origen de la transformación en el centro */
+  margin-top: 2%;
+}
+
+
+.marker img {
+  max-width: 100%; /* Ajusta el tamaño de la imagen si es necesario */
+  height: auto; /* Mantiene las proporciones */
+}
+
+
 body {
   background: linear-gradient(to bottom, #3E3E3E, #1A1A1A);
   height: 100vh; /* Ocupa el 100% de la altura de la ventana */
   margin: 0; /* Elimina márgenes por defecto */
-  overflow: hidden; /* Evita el scroll */
+  /*overflow: hidden; /* Evita el scroll */
 }
 
 
-    .container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 20vh;
-        width: 100%;
-        background-color: #0CB7F2; /* Fondo rosa */
-        margin-top: 5%;
-      }
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  width: 100%;
+  background-color: #0CB7F2; /* Fondo blanco */
+  margin-top: 8%;
+  position: relative; /* Permite posicionar elementos absolutos dentro del container */
+}
 
 
       
