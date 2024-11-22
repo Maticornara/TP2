@@ -13,12 +13,10 @@ body {
 .titulo.nivel {
  margin-top: -2%;
   margin-bottom: 12%; /* Espacio debajo de la imagen del título */
+  scale: 0.8;
 }
 
 .boton.round1 {
-  cursor: pointer;
-  background: none;
-  border: none;
   width: auto;
   scale: 90%;
   display: inline-block; /* Necesario para aplicar transform */

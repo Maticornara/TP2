@@ -13,10 +13,10 @@ document.querySelectorAll('.button-container .boton').forEach((button) => {
       gradient.classList.add('flop'); // Cambiar a gradiente FLOP
     }
 
-    // Redirigir después de 3 segundos
+    // Redirigir después de 2 segundos
     setTimeout(() => {
       const target = button.getAttribute('data-target');
       window.location.href = target; // Redirigir a la URL
-    }, 3000);
+    }, 2000);
   });
 });

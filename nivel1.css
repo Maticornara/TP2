@@ -53,10 +53,26 @@ body {
   height: 50vh; /* Mismo alto que el container */
   width: 5vh; /* Ancho inicial */
   background: linear-gradient(to bottom, #FF45A2 0%, #BB56DE 50%, #0CB7F2 100%);
-  z-index: 10; /* Envía al fondo */
-  transition: all 3s ease-in-out; /* Transición suave */
+  background-size: 200% 200%; /* Duplica el tamaño para crear el efecto de movimiento */
+  z-index: 10; /* Envía al frente */
+  transition: all 2s ease-in-out; /* Transición suave */
   margin-top: 8%;
+  animation: gradientFlow 6s infinite alternate ease-in-out;
 }
+
+/* Animación de los colores */
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 0%; /* Inicio del movimiento */
+  }
+  50% {
+    background-position: 50% 100%; /* Desplazamiento hacia el centro */
+  }
+  100% {
+    background-position: 100% 0%; /* Regresa a la posición inicial */
+  }
+}
+
 
 
 
