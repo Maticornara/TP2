@@ -150,13 +150,13 @@ body {
 /* Cambios para HIT A VECES PARA FLOP */
 .animated-gradient.flop {
   width: 100vw; /* Ancho completo */
-  background: #0CB7F2;
-}
+  background: #FF45A2; 
+} 
 
 /* Cambios para FLOP A VECES PARA HIT */
 .animated-gradient.hit {
   width: 100vw; 
-  background: #FF45A2; 
+  background: #0CB7F2; 
 }
 
 

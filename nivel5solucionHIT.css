@@ -7,7 +7,6 @@
   margin-top: 2%;
 }
 
-
 .marker img {
   max-width: 100%; /* Ajusta el tamaño de la imagen si es necesario */
   height: auto; /* Mantiene las proporciones */
@@ -19,8 +18,8 @@ body {
   height: 100vh; /* Ocupa el 100% de la altura de la ventana */
   margin: 0; /* Elimina márgenes por defecto */
   overflow: hidden; /* Evita el scroll */
-}
 
+}
 
 
 .container {
@@ -29,7 +28,7 @@ body {
   justify-content: center;
   height: 50vh;
   width: 100%;
-  background-color: #0CB7F2; /* Fondo blanco */
+  background-color: #FF45A2; /* Fondo blanco */
   margin-top: 8%;
   position: relative; /* Permite posicionar elementos absolutos dentro del container */
 }
@@ -61,8 +60,7 @@ body {
 
 
 
-
-
+/* Imagen centrada */
 .centered-image {
   display: flex;
   justify-content: center; /* Centrado horizontal */
@@ -97,54 +95,51 @@ body {
     transform: translateY(0); /* Regresa a la posición original */
   }
 }
-      
 
-      
 
-      .button-right {
-        display: flex;
-        justify-content: flex-end; 
-        scale: 60%;
-        margin-right: -20%; /* Margen derecho del 20% */
-        margin-top: -2%;
-        
-    }
 
-    .button-right img:hover {
-      transform: scale(0.9); /* Reduce el tamaño al 90% en hover */
-      opacity: 0.8; /* Cambia la opacidad al 80% en hover */
-      }
-    
-    .button-right img {
-        cursor: pointer;
-        width: auto;
-        transition: transform 0.3s ease, opacity 0.3s ease; /* Suaviza la transición */
-    }
-    
-      
-
-    .respuesta {
-      scale: 0.2;                /* Tamaño inicial pequeño */
-      opacity: 0;                /* Comienza invisible */
+     .button-right {
       display: flex;
-      justify-content: center;   /* Centrado horizontal */
-      align-items: center;       /* Centrado vertical */
-      margin-top: -10%;
-      animation: appear 1.5s ease-out forwards 0.8s; /* Aparece con un delay */
+      justify-content: flex-end; /* Alinea a la derecha */
+      scale: 60%;
+      margin-right: -20%; /* Margen derecho del 20% */
+      margin-top: -2%;
+      
+  }
+
+  .button-right img:hover {
+    transform: scale(0.9); /* Reduce el tamaño al 90% en hover */
+    opacity: 0.8; /* Cambia la opacidad al 80% en hover */
     }
-    
-    /* Animación para escala y opacidad */
-    @keyframes appear {
-      0% {
-        scale: 0.38;             /* Escala inicial */
-        opacity: 0;             /* Totalmente invisible */
-      }
-      100% {
-        scale: 0.4;             /* Escala final */
-        opacity: 1;             /* Totalmente visible */
-      }
+  
+  .button-right img {
+      cursor: pointer;
+      width: auto;
+      transition: transform 0.3s ease, opacity 0.3s ease; /* Suaviza la transición */
+  }
+
+
+  .respuesta {
+    scale: 0.2;                /* Tamaño inicial pequeño */
+    opacity: 0;                /* Comienza invisible */
+    display: flex;
+    justify-content: center;   /* Centrado horizontal */
+    align-items: center;       /* Centrado vertical */
+    margin-top: -10%;
+    animation: appear 1.5s ease-out forwards 0.8s; /* Aparece con un delay */
+  }
+  
+  /* Animación para escala y opacidad */
+  @keyframes appear {
+    0% {
+      scale: 0.38;             /* Escala inicial */
+      opacity: 0;             /* Totalmente invisible */
     }
-    
-    
-    
+    100% {
+      scale: 0.4;             /* Escala final */
+      opacity: 1;             /* Totalmente visible */
+    }
+  }
+  
+  
     
