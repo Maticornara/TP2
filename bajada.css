@@ -1,27 +1,27 @@
 body {
     background: linear-gradient(to bottom, #3E3E3E, #1A1A1A);
-    height: 100vh; /* Ocupa el 100% de la altura de la ventana */
-    margin: 0; /* Elimina márgenes por defecto */
+    height: 120vh; 
+    margin: 0; 
     overflow: hidden; /* Evita el scroll */
   }
 
-    .logo {
-  
-        margin-left: 4%;
-        margin-top: 6%;
-        }
+  .logo {
+    margin-left: -7%;
+    scale: 0.65;
+    transition: transform 0.5s ease;
+    margin-top: -4%;
+  }
 
-/* Estilos originales de h1 */
+
 h1 {
     font-family: 'Noka', sans-serif;
     font-weight: 600;
     font-size: 30pt;
     color: #FF45A2;
-    margin-top: -23%;
+    margin-top: -32%;
     margin-left: 55%;
 }
 
-/* Estilos originales de h2 */
 h2 {
     font-family: 'Noka', sans-serif;
     font-weight: 400;
@@ -40,9 +40,9 @@ h2 {
 }
 
 .boton:hover img {
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Suaviza la transición */
-    transform: scale(0.9); /* Reduce el tamaño al 90% */
-    opacity: 0.8; /* Cambia la opacidad al 80% */
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+    transform: scale(0.9); 
+    opacity: 0.8; 
 }
 
 

@@ -1,33 +1,110 @@
+
+.marker {
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%) scale(0.7); 
+  transform-origin: center; 
+  margin-top: 2%;
+}
+
+
+.marker img {
+  max-width: 100%; /* Ajusta el tamaño de la imagen si es necesario */
+  height: auto; /* Mantiene las proporciones */
+}
+
+
+
 body {
   background: linear-gradient(to bottom, #3E3E3E, #1A1A1A);
   height: 100vh; /* Ocupa el 100% de la altura de la ventana */
   margin: 0; /* Elimina márgenes por defecto */
   overflow: hidden; /* Evita el scroll */
+
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  width: 100%;
+  background-color: #ffffff; /* Fondo blanco */
+  margin-top: 8%;
+  position: relative; /* Permite posicionar elementos absolutos dentro del container */
+}
+
+/* Tipografía (se mantiene igual) */
+.container h2 {
+  font-family: 'Noka', sans-serif;
+  font-weight: 600;
+  font-size: 20pt;
+  color: #3E3E3E;
+  margin: 0; /* Elimina cualquier margen por defecto */
+  text-align: center; /* Alinea el texto al centro */
 }
 
 
-    .container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 20vh;
-      width: 100%;
-      background-color: #ffffff; /* Fondo blanco */
-      margin-top: 5%;
-  }
-  
-  /* Estilos para el reproductor de audio */
-  .container audio {
-      width: 80%; /* Ajusta el tamaño del reproductor */
-  }
-  
+/* Gradiente inicial */
+.animated-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50vh; /* Mismo alto que el container */
+  width: 5vh; /* Ancho inicial */
+  background: linear-gradient(to bottom, #FF45A2 0%, #BB56DE 50%, #0CB7F2 100%);
+  background-size: 200% 200%; /* Duplica el tamaño para crear el efecto de movimiento */
+  z-index: 10; /* Envía al frente */
+  transition: all 2s ease-in-out; /* Transición suave */
+  margin-top: 8%;
+  animation: gradientFlow 6s infinite alternate ease-in-out;
+}
 
+/* Animación de los colores */
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 0%; /* Inicio del movimiento */
+  }
+  50% {
+    background-position: 50% 100%; /* Desplazamiento hacia el centro */
+  }
+  100% {
+    background-position: 100% 0%; /* Regresa a la posición inicial */
+  }
+}
+
+
+
+
+
+
+
+
+
+/* Cambios para HIT A VECES PARA FLOP */
+.animated-gradient.flop {
+  width: 100vw; /* Ancho completo */
+  background: #FF45A2; 
+}
+
+/* Cambios para FLOP A VECES PARA HIT */
+.animated-gradient.hit {
+  width: 100vw; 
+  background: #0CB7F2; 
+}
+
+
+
+
+  
+  
       .button-container {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 2.5%; /* Ajusta el valor para aumentar o disminuir el espacio */
-        margin-top: 20%;
+        margin-top: 5%;
       }
       
       .button-container img {
@@ -39,14 +116,16 @@ body {
       /* Estilo de hover para el botón "Notting Hill" */
       .boton.hit:hover {
         transition: transform 0.3s ease, opacity 0.3s ease; /* Suaviza la transición */
-        transform: scale(0.9); /* Reduce el tamaño al 90% */
-        opacity: 0.8; /* Cambia la opacidad al 80% */
+        transform: scale(0.8); /* Reduce el tamaño al 90% */
+        opacity: 1; /* Cambia la opacidad al 80% */
       }
       
       /* Estilo de hover para el botón "Before Sunrise" */
       .boton.flop:hover {
         transition: transform 0.3s ease, opacity 0.3s ease; /* Suaviza la transición */
         transform: scale(0.9); /* Reduce el tamaño al 90% */
-        opacity: 0.8; /* Cambia la opacidad al 80% */
+        opacity: 1; /* Cambia la opacidad al 80% */
       }
       
+
+  

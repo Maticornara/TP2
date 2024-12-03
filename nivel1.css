@@ -3,8 +3,8 @@
   position: absolute;
   top: 2%;
   left: 50%;
-  transform: translateX(-50%) scale(0.7); /* Aplica la escala después de centrar */
-  transform-origin: center; /* Establece el origen de la transformación en el centro */
+  transform: translateX(-50%) scale(0.7); 
+  transform-origin: center; 
   margin-top: 2%;
 }
 
@@ -79,13 +79,13 @@ body {
 /* Cambios para HIT */
 .animated-gradient.hit {
   width: 100vw; /* Ancho completo */
-  background: #FF45A2; /* Cambia a color sólido */
+  background: #FF45A2; 
 }
 
 /* Cambios para FLOP */
 .animated-gradient.flop {
-  width: 100vw; /* Ancho completo */
-  background: #0CB7F2; /* Cambia a color sólido */
+  width: 100vw; 
+  background: #0CB7F2; 
 }
 
 

@@ -8,32 +8,32 @@ h1 {
 
 body {
   background: linear-gradient(to bottom, #3E3E3E, #1A1A1A);
-  height: 100vh; /* Ocupa el 100% de la altura de la ventana */
-  margin: 0; /* Elimina márgenes por defecto */
-  overflow: hidden; /* Evita el scroll */
+  height: 120vh; 
+  overflow: hidden; /* Mueve el logo un 29% hacia la izquierda */
 }
 
 
 
 
 .logo {
-  margin-left: 33%;
-  margin-top: 6%;
-  transition: transform 0.5s ease; /* Añadimos la transición para la animación */
+  margin-left: 18%;
+  scale: 0.65;
+  transition: transform 0.5s ease;
+  margin-top: -5%;
 }
 
 .boton {
-  margin-top: 6%;
+  margin-top: -1%;
   margin-left: 48%;
 
 } 
 
 .boton:hover img {
-  transition: transform 0.3s ease, opacity 0.3s ease; /* Suaviza la transición */
-  transform: scale(0.9); /* Reduce el tamaño al 90% */
-  opacity: 0.8; /* Cambia la opacidad al 80% */
+  transition: transform 0.3s ease, opacity 0.3s ease; 
+  transform: scale(0.9); 
+  opacity: 0.8; 
 }
 
 .move-left {
-  transform: translateX(-29vw); /* Mueve el logo un 20% hacia la izquierda */
+  transform: translateX(-29vw); /* Mueve el logo un 29% hacia la izquierda */
 }

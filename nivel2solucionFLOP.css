@@ -1,3 +1,19 @@
+.marker {
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%) scale(0.7); /* Aplica la escala después de centrar */
+  transform-origin: center; /* Establece el origen de la transformación en el centro */
+  margin-top: 2%;
+}
+
+
+.marker img {
+  max-width: 100%; /* Ajusta el tamaño de la imagen si es necesario */
+  height: auto; /* Mantiene las proporciones */
+}
+
+
 body {
   background: linear-gradient(to bottom, #3E3E3E, #1A1A1A);
   height: 100vh; /* Ocupa el 100% de la altura de la ventana */
@@ -6,54 +22,56 @@ body {
 }
 
 
-    .container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 20vh;
-        width: 100%;
-        background-color: #0CB7F2; /* Fondo rosa */
-        margin-top: 5%;
-      }
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  width: 100%;
+  background-color: #0CB7F2; /* Fondo blanco */
+  margin-top: 8%;
+  position: relative; /* Permite posicionar elementos absolutos dentro del container */
+}
 
 
       
-      /* Estilos para el h2 */
-      .container h2 {
-        font-family: 'Noka', sans-serif;
-        font-weight: 600;
-        font-size: 70pt;
-        justify-content: center;
-        color: #ffffff;
-        margin: 0; /* Elimina cualquier margen por defecto */
-      }
+/* Estilos para el h2 */
+.container h2 {
+  font-family: 'Noka', sans-serif;
+  font-weight: 600;
+  font-size: 70pt;
+  color: #ffffff;
+  margin: 0; /* Elimina cualquier margen por defecto */
+  transform: scale(0); /* Inicialmente con un tamaño de escala 0 */
+  animation: scaleIn 1s ease forwards; /* Animación que ocurre en 1 segundo */
+  animation-delay: 0s; /* Espera 2 segundos antes de comenzar la animación */
+}
 
-      .button-right {
-        display: flex;
-        justify-content: flex-end; /* Alinea a la derecha */
-        scale: 60%;
-        margin-right: -20%; /* Margen derecho del 20% */
-        margin-top: 20%;
-    }
-    
-    .button-right img {
-        cursor: pointer;
-        width: auto;
-        transition: transform 0.3s ease, opacity 0.3s ease; /* Suaviza la transición */
-    }
-    
-    .button-right img:hover {
-        transform: scale(0.9); /* Reduce el tamaño al 90% en hover */
-        opacity: 0.8; /* Cambia la opacidad al 80% en hover */
-    }
+/* Definición de la animación */
+@keyframes scaleIn {
+  0% {
+    transform: scale(0); /* Comienza en escala 0% */
+  }
+  100% {
+    transform: scale(1); /* Termina en escala 100% */
+  }
+}
 
-    .centered-image {
-        display: flex;
-        justify-content: center; /* Centrado horizontal */
-        align-items: center;     /* Centrado vertical */
-        margin-top: -27%;        /* Ajuste opcional, si es necesario */
-        animation: levitate 1s ease-in-out infinite; /* Animación de levitación en loop */
-      }
+
+
+
+
+.centered-image {
+display: flex;
+justify-content: center; /* Centrado horizontal */
+align-items: center;     /* Centrado vertical */
+margin-top: -32.5%;        /* Ajuste opcional, si es necesario */
+animation: levitate 1s ease-in-out infinite; /* Animación de levitación en loop */
+scale: 0.45;
+}
+      
+
       
       @keyframes levitate {
         0% {
@@ -69,6 +87,36 @@ body {
       
 
       
+
+      .button-right {
+        display: flex;
+        justify-content: flex-end; 
+        scale: 60%;
+        margin-right: -20%; /* Margen derecho del 20% */
+        margin-top: -2%;
+        
+    }
+
+    .button-right img:hover {
+      transform: scale(0.9); /* Reduce el tamaño al 90% en hover */
+      opacity: 0.8; /* Cambia la opacidad al 80% en hover */
+      }
+    
+    .button-right img {
+        cursor: pointer;
+        width: auto;
+        transition: transform 0.3s ease, opacity 0.3s ease; /* Suaviza la transición */
+    }
+    
+      
+
+      .respuesta {
+      scale: 0.4;
+      display: flex;
+      justify-content: center; /* Centrado horizontal */
+      align-items: center;     /* Centrado vertical */
+      margin-top: -10%;
+      }
     
     
     
