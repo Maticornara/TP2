@@ -21,14 +21,6 @@ body {
   height: 100vh; /* Ocupa el 100% de la altura de la ventana */
   margin: 0; /* Elimina márgenes por defecto */
   overflow: hidden; /* Evita el scroll */
-
-}
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #333; /* Fondo general */
-  color: #3E3E3E; /* Texto blanco */
 }
 
 .container {
@@ -37,66 +29,10 @@ body {
   justify-content: center;
   height: 50vh;
   width: 100%;
-  background-color: #ffffff; /* Gris oscuro */
+  background-color: #ffffff; /* Fondo blanco */
   margin-top: 8%;
-  position: relative;
+  position: relative; /* Permite posicionar elementos absolutos dentro del container */
 }
-
-.custom-audio {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.control-button {
-  background-color: #ffffff; /* Violeta */
-  color: #BB57DF;
-  border: none;
-  border-radius: 0px;
-  font-size: 30px;
-  cursor: pointer;
-
-}
-
-.control-button:hover {
-  color: #8800ff; /* Violeta más oscuro */
- 
-}
-
- #volume-bar {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 50px;
-  height: 5px;
-  background-color: #282828; 
-  outline: none;
-  cursor: pointer;
-
-
-
-}
-
-#seek-bar {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 320px;
-  height: 10px;
-  background-color: #3E3E3E; 
-  outline: none;
-  cursor: pointer;
-}
-
-
-#seek-bar::-webkit-slider-thumb, #volume-bar::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 20px;
-  height: 20px;
-  background-color: #BB57DF; 
-  border-radius: 50%;
-  cursor: pointer;
-}
-
 
 /* Tipografía (se mantiene igual) */
 .container h2 {
@@ -106,8 +42,6 @@ body {
   color: #3E3E3E;
   margin: 0; /* Elimina cualquier margen por defecto */
   text-align: center; /* Alinea el texto al centro */
-  margin-top: -1%;
-
 }
 
 
@@ -142,19 +76,14 @@ body {
 
 
 
-
-
-
-
-
-/* Cambios para HIT A VECES PARA FLOP */
-.animated-gradient.flop {
-  width: 100vw; /* Ancho completo */
-  background: #0CB7F2;  
-} 
-
-/* Cambios para FLOP A VECES PARA HIT */
+/* Cambios para HIT */
 .animated-gradient.hit {
+  width: 100vw; /* Ancho completo */
+  background: #0CB7F2; 
+}
+
+/* Cambios para FLOP */
+.animated-gradient.flop {
   width: 100vw; 
   background: #FF45A2; 
 }
@@ -181,7 +110,7 @@ body {
       /* Estilo de hover para el botón "Notting Hill" */
       .boton.hit:hover {
         transition: transform 0.3s ease, opacity 0.3s ease; /* Suaviza la transición */
-        transform: scale(0.8); /* Reduce el tamaño al 90% */
+        transform: scale(0.9); /* Reduce el tamaño al 90% */
         opacity: 1; /* Cambia la opacidad al 80% */
       }
       
@@ -191,3 +120,6 @@ body {
         transform: scale(0.9); /* Reduce el tamaño al 90% */
         opacity: 1; /* Cambia la opacidad al 80% */
       }
+      
+
+  
