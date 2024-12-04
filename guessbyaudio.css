@@ -13,13 +13,34 @@ body {
  margin-top: -2%;
   margin-bottom: 12%; 
   scale: 0.8;
+  opacity: 0; /* Inicialmente invisible */
+  animation: fadeIn 1s ease-in-out forwards; /* Animación sin delay */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .boton.round2 {
   width: auto;
   scale: 90%;
   display: inline-block; /* Necesario para aplicar transform */
-  transition: transform 0.3s ease, opacity 0.3s ease; 
+  opacity: 0; /* Inicialmente invisible */
+  animation: fadeIn 0.3s ease-in-out 1s forwards; /* Animación con delay de 1 segundo */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Estado inicial */
+  }
+  100% {
+    opacity: 1; /* Estado final */
+  }
 }
 
 .boton.round2:hover {
