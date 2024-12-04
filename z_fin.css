@@ -1,0 +1,52 @@
+
+
+
+body {
+  background: linear-gradient(to bottom, #3E3E3E, #1A1A1A);
+  height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+  margin: 0; /* Elimina márgenes por defecto */
+  overflow: hidden; /* Evita el scroll */
+}
+
+
+
+.imagen-escalada {
+  width: auto; /* Mantiene la proporción de ancho */
+  height: 100vh; /* Escala la altura al 100% de la ventana */
+  display: block; /* Asegura que no se comporte como inline */
+  margin: 0 auto; /* Centra horizontalmente si es necesario en un bloque */
+  object-fit: cover; /* Opcional: ajusta la imagen para llenar el espacio sin deformarse */
+}
+
+
+      
+
+      
+
+      .button-right {
+        display: flex;
+        justify-content: flex-end; 
+        scale: 60%;
+        margin-right: -19%; /* Margen derecho del 20% */
+        margin-top: -6%;
+        
+    }
+
+    .button-right img:hover {
+      transform: scale(0.9); /* Reduce el tamaño al 90% en hover */
+      opacity: 0.8; /* Cambia la opacidad al 80% en hover */
+      }
+    
+    .button-right img {
+        cursor: pointer;
+        width: auto;
+        transition: transform 0.3s ease, opacity 0.3s ease; /* Suaviza la transición */
+    }
+    
+      
+
+
+    
+    
+    
+    

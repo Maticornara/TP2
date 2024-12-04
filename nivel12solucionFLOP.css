@@ -1,0 +1,150 @@
+.marker {
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%) scale(0.7); /* Aplica la escala después de centrar */
+  transform-origin: center; /* Establece el origen de la transformación en el centro */
+  margin-top: 2%;
+}
+
+
+.marker img {
+  max-width: 100%; /* Ajusta el tamaño de la imagen si es necesario */
+  height: auto; /* Mantiene las proporciones */
+}
+
+
+body {
+  background: linear-gradient(to bottom, #3E3E3E, #1A1A1A);
+  height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+  margin: 0; /* Elimina márgenes por defecto */
+  overflow: hidden; /* Evita el scroll */
+}
+
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  width: 100%;
+  background-color: #0CB7F2; /* Fondo blanco */
+  margin-top: 8%;
+  position: relative; /* Permite posicionar elementos absolutos dentro del container */
+}
+
+
+      
+/* Estilos para el h2 */
+.container h2 {
+  font-family: 'Noka', sans-serif;
+  font-weight: 600;
+  font-size: 70pt;
+  color: #ffffff;
+  margin: 0; /* Elimina cualquier margen por defecto */
+  transform: scale(0); /* Inicialmente con un tamaño de escala 0 */
+  animation: scaleIn 1s ease forwards; /* Animación que ocurre en 1 segundo */
+  animation-delay: 0s; /* Espera 2 segundos antes de comenzar la animación */
+}
+
+
+/* Definición de la animación */
+@keyframes scaleIn {
+  0% {
+    transform: scale(0.6); /* Comienza en escala 0% */
+  }
+  100% {
+    transform: scale(1); /* Termina en escala 100% */
+  }
+}
+
+
+
+
+
+.centered-image {
+  display: flex;
+  justify-content: center; /* Centrado horizontal */
+  align-items: center;     /* Centrado vertical */
+  margin-top: -32.5%;      /* Ajuste opcional, si es necesario */
+  scale: 0;                /* Inicia con tamaño 0 */
+  opacity: 0;              /* Inicia con opacidad 0 */
+  animation: appear 1.1s ease-out forwards, levitate 1s ease-in-out infinite 1.5s;
+}
+
+/* Animación de entrada (escalado y opacidad) */
+@keyframes appear {
+  0% {
+    scale: 0.40;              /* Tamaño inicial pequeño */
+    opacity: 0;            /* Comienza invisible */
+  }
+  100% {
+    scale: 0.45;              /* Tamaño normal */
+    opacity: 1;            /* Totalmente visible */
+  }
+}
+
+/* Animación de levitación */
+@keyframes levitate {
+  0% {
+    transform: translateY(0); /* Empieza en la posición original */
+  }
+  50% {
+    transform: translateY(-10px); /* Se mueve 10px hacia arriba */
+  }
+  100% {
+    transform: translateY(0); /* Regresa a la posición original */
+  }
+}
+      
+
+      
+
+      .button-right {
+        display: flex;
+        justify-content: flex-end; 
+        scale: 60%;
+        margin-right: -20%; /* Margen derecho del 20% */
+        margin-top: -2%;
+        
+    }
+
+    .button-right img:hover {
+      transform: scale(0.9); /* Reduce el tamaño al 90% en hover */
+      opacity: 0.8; /* Cambia la opacidad al 80% en hover */
+      }
+    
+    .button-right img {
+        cursor: pointer;
+        width: auto;
+        transition: transform 0.3s ease, opacity 0.3s ease; /* Suaviza la transición */
+    }
+    
+      
+
+    .respuesta {
+      scale: 0.2;                /* Tamaño inicial pequeño */
+      opacity: 0;                /* Comienza invisible */
+      display: flex;
+      justify-content: center;   /* Centrado horizontal */
+      align-items: center;       /* Centrado vertical */
+      margin-top: -10%;
+      animation: appear 1.5s ease-out forwards 0.8s; /* Aparece con un delay */
+    }
+    
+    /* Animación para escala y opacidad */
+    @keyframes appear {
+      0% {
+        scale: 0.38;             /* Escala inicial */
+        opacity: 0;             /* Totalmente invisible */
+      }
+      100% {
+        scale: 0.4;             /* Escala final */
+        opacity: 1;             /* Totalmente visible */
+      }
+    }
+    
+    
+    
+    
